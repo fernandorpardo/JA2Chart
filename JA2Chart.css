@@ -1,0 +1,123 @@
+/*
+	Just Another JAvascript Chart library
+	Fernando R 
+*/
+
+.JA2CHART
+{
+	font-family:"GothamLight", sans-serif;
+	font-size:16px;
+	line-height:16px;
+	color: #1D1D1D;
+	background-color: ivory;
+	margin: 0 auto;
+	width: 1280px;		/* default width */
+}
+/* ------------------------------------------------------------------------------------------------
+   -----------------------------------------  ZOOM BAR --------------------------------------------
+*/
+.JA2CHART .ZOOM_BAR
+{
+	height:12px;
+	width:100%;
+	background-color:#eeeeee;
+	max-width:none; 
+	margin:0 auto; 
+	margin-bottom:4px;
+	display:none;
+}
+.JA2CHART .ZOOM_BAR > div
+{
+	display:block;
+	height:100%;
+	width:10%;
+	margin-left:0%;
+	background-color:#aaaaaa;
+	cursor:pointer;
+}
+.JA2CHART .ZOOM_BAR > div.pressed
+{
+	box-shadow: 3px 2px 2px #555555;
+}
+/* ------------------------------------------------------------------------------------------------
+   ----------------------------------------- HEADER -----------------------------------------------
+*/
+.JA2CHART .HEADER
+{
+	width:100%;
+	height:60px;
+	display: none;
+}
+.JA2CHART .HEADER .BOX_INFO_RANGE
+{
+	font-size:14px;
+	line-height:16px;
+	width:20%;
+	float:left;
+}
+.JA2CHART .HEADER .INFO_BOXES_CONTAINER
+{
+	width:80%;float:left;
+}
+.JA2CHART .HEADER .INFO_BOXES_CONTAINER > div
+{
+	width:0px;margin:0 auto;
+}
+.JA2CHART .HEADER .PLOT_INFO
+{
+	font-size:14px;
+	line-height:16px;
+	width:180px;
+	float:left;
+	display: none;
+}
+.JA2CHART .HEADER .PLOT_INFO > div
+{
+	text-align:center;
+}
+.JA2CHART .HEADER .PLOT_INFO > div > div
+{
+	background-color:#cccccc; 
+	width:30px;
+	height:14px;
+	margin-top:2px;
+	float:left;
+}
+.JA2CHART .HEADER .PLOT_INFO p:nth-child(2) {
+	font-size:16px;
+	text-align:center;
+	font-weight:bold;
+}
+.JA2CHART .HEADER .PLOT_INFO p:nth-child(3) {
+	font-size:14px;
+	text-align:center;
+}
+
+
+/* ------------------------------------------------------------------------------------------------
+   ----------------------------------------- CANVAS  ----------------------------------------------
+*/
+.JA2CHART .CANVAS_CONTAINER
+{
+	position:relative;
+	width:100%;
+}
+.JA2CHART .CANVAS_CONTAINER .GRID,
+.JA2CHART .CANVAS_CONTAINER .PLOT,
+.JA2CHART .CANVAS_CONTAINER .CURSOR 
+{ 	
+	position:absolute;
+	left:0;
+	top:0;
+	height:100%; 
+}
+
+.JA2CHART .CANVAS_CONTAINER .CURSOR
+{
+	z-index:9;
+}
+.JA2CHART .CANVAS_CONTAINER .PLOT
+{
+	z-index:1;
+}
+/* 	END OF FILE */
