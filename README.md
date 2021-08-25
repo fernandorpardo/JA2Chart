@@ -5,7 +5,7 @@ A javascript library for drawing linear charts of a large amount of data
 
 ## Description
 JA2Chart may be Just Another JAvascript chart library or maybe not if you are looking for a simple tool to:
-- draw linear chart made of a large among of data (tens of thousands)
+- draw linear chart made of a large amount of data (tens of thousands)
 - zoom in and out and perform horizontal scrolling
 - manage more than one curve using two Y-axis
 - apply transformations and dynamically update data
