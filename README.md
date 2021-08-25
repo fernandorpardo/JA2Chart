@@ -1,5 +1,5 @@
 # JA2Chart
-A javascript library for linear charts
+A javascript library for drawing linear charts of a large amount of data 
 
 ## Description
 JA2Chart may be just another javascript chart library or maybe not. It is designed specifically for:
@@ -8,7 +8,7 @@ JA2Chart may be just another javascript chart library or maybe not. It is design
 - managing more than one curve using two Y-axis
 - dynamically update data
 
-You can find a detailed explanation about the project an an example at [iambobot.com](https://www.iambobot.com/en/articles/article_ja2chart_010_intro.php).
+You can find a detailed explanation about the project and an example at [iambobot.com](https://www.iambobot.com/en/articles/article_ja2chart_010_intro.php).
 
 ## Usage
 You need the two files published here:
@@ -209,7 +209,7 @@ If we add a third plot we have to tell which of the two Y axis that plot has to 
 # Transformations
 There is a way to perform changes in the data and see the effects. We have three methods in the JA2Chart library to do that:
 - PlotClone(plot_ID_to_clone) is used instead of Plot() to create a new plot from an existing one.
-- DataGet(plot_ID, data_array) retrieves the data into an array of {X_value:<date in seconds>, Y_value:<float number>} tuples representing a (x, y) coordinate of the chart, where 'x' is a date in seconds and 'y' the value of the function being represented.
+- DataGet(plot_ID, data_array) retrieves the data into an array of {X_value:&lt;date in seconds>, Y_value:&lt;float number>} tuples representing a (x, y) coordinate of the chart, where 'x' is a date in seconds and 'y' is the value of the function being represented.
 - DataUpdate(plot_ID, data_array) is used to update the plot with the transformed data. Only the 'y' value is updated while 'x' remains unchanged.
   
 In the example, we are drawing the evolution of the Cardano (ADA) cryptocurrency and a second curve that results of applying a low pass filter (average) to mitigate sampling distortion:
@@ -250,9 +250,9 @@ function AverageMidPonderate(data_in, data_out, r)
     var run_sum= 0;
     for(var j=a; j<b; j++) 
     {
-      if( (j+1) < b)
+      if((j+1) < b)
       {
-        var run= ( data_in[j+1].X_value - data_in[j].X_value);
+        var run= (data_in[j+1].X_value - data_in[j].X_value);
         avg += data_in[j].Y_value * run;	
         run_sum += run;
       }
