@@ -1,6 +1,6 @@
 # JA2Chart
 A javascript library for drawing linear charts of a large amount of data 
-
+![JA2Chart_capture](https://user-images.githubusercontent.com/38065602/130755419-31f5b6e7-23eb-471e-a4ef-f85d06ca0c84.jpg)
 ## Description
 JA2Chart may be just another javascript chart library or maybe not. It is designed specifically for:
 - linear chart made of a large among of data (tens of thousands)
